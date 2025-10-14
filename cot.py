@@ -131,7 +131,7 @@ args = cot_args()
 sentence_encoder = SentenceTransformer(os.path.join('plm', args.plm))
 with open(os.path.join('data', args.dataset, 'tables.json'), 'r', encoding='utf-8') as file:
     dbs = {db['db_id']: db for db in json.load(file)}
-with open(os.path.join('data', args.dataset, 'train.json'), 'r', encoding='utf-8') as file:
+with open(os.path.join('data', args.dataset, 'dev.json'), 'r', encoding='utf-8') as file:
     dataset = json.load(file)
 for i, example in enumerate(dataset):
     if 'cot' in example:
