@@ -1,3 +1,6 @@
 nltk
 sentence_transformers
 huggingface_hub
+openai
+python-dotenv
+git+https://github.com/minturtle/text-to-sql@v0.1.3
